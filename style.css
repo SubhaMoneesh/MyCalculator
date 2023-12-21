@@ -1,0 +1,52 @@
+body{
+    /* background-color: rgb(192, 191, 191); */
+    background-image: url("calc.webp");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+}
+
+td{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.display{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px 0px;
+    box-sizing: border-box;
+    color: rgb(192, 191, 191);
+    font-size: 60px;
+    justify-content: right;
+}
+
+.calculator{
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.right{
+    background-color: rgb(255, 139, 43);
+    color: white;
+    font-size: larger;
+}
+
+.numbers{
+    background-color: rgb(59, 59, 59);
+    color: rgb(192, 191, 191);
+}
+
+.AC{
+    background-color: rgb(192, 191, 191);
+    color: rgb(59, 59, 59);
+}
