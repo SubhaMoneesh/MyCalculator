@@ -9,36 +9,40 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-td{
+input[type="button"]{
     height: 60px;
     width: 60px;
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
     font-weight: 600;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
-.display{
+input[type="text"]{
     height: 120px;
-    display: flex;
-    align-items: center;
-    padding: 20px 15px 0px;
+    width: 260px;
+    background-color: black;
+    border: none;
+    text-align: right;
+    padding: 20px 20px 0px;
     box-sizing: border-box;
     color: rgb(192, 191, 191);
     font-size: 60px;
-    justify-content: right;
+    font-family: 'Poppins', sans-serif;
 }
 
 .calculator{
     background-color: black;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 50px 15px 30px;
 }
 
 .right{
     background-color: rgb(255, 139, 43);
     color: white;
-    font-size: larger;
 }
 
 .numbers{
@@ -49,4 +53,25 @@ td{
 .AC{
     background-color: rgb(192, 191, 191);
     color: rgb(59, 59, 59);
+}
+
+@media screen and (min-height:1000px) {
+    input[type="button"]{
+        height: 110px;
+        width: 110px;
+        font-size: 40px;
+    }
+    input[type="text"]{
+        height: 300px;
+        font-size: 120px;
+        width: 450px;
+    }
+    body{
+        align-items: end;
+    }
+    .calculator{
+        border-radius: 60px;
+        position: relative;
+        top: 60px;
+    }
 }
