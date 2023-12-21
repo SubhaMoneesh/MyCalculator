@@ -15,9 +15,7 @@
 
 <body>
     <div class="calculator">
-        <div class="display">
-            0
-        </div>
+        <input type="text" value="0" id="result">
         <div class="buttons">
             <!-- <div class="left">
                 <div class="ac">
@@ -32,33 +30,33 @@
             </div> -->
             <table>
                 <tr>
-                    <td class="AC">AC</td>
-                    <td class="AC">+/-</td>
-                    <td class="AC">%</td>
-                    <td class="right">÷</td>
+                    <td><input type="button" class="AC" value="AC" onclick="document.getElementById('result').value = '0'"></td>
+                    <td><input type="button" class="AC" value="+/-" onclick="document.getElementById('result').value = eval(document.getElementById('result').value)*(-1)"></td>
+                    <td><input type="button" class="AC" value="%" onclick="document.getElementById('result').value += '%'"></td>
+                    <td><input type="button" class="right" value="÷" onclick="document.getElementById('result').value += '/'"></td>
                 </tr>
                 <tr>
-                    <td class="numbers">7</td>
-                    <td class="numbers">8</td>
-                    <td class="numbers">9</td>
-                    <td class="right">×</td>
+                    <td><input type="button" class="numbers" value="7" onclick="document.getElementById('result').value += '7'"></td>
+                    <td><input type="button" class="numbers" value="8" onclick="document.getElementById('result').value += '8'"></td>
+                    <td><input type="button" class="numbers" value="9" onclick="document.getElementById('result').value += '9'"></td>
+                    <td><input type="button" class="right" value="×" onclick="document.getElementById('result').value += '*'"></td>
                 </tr>
                 <tr>
-                    <td class="numbers">4</td>
-                    <td class="numbers">5</td>
-                    <td class="numbers">6</td>
-                    <td class="right">-</td>
+                    <td><input type="button" class="numbers" value="4" onclick="document.getElementById('result').value += '4'"></td>
+                    <td><input type="button" class="numbers" value="5" onclick="document.getElementById('result').value += '5'"></td>
+                    <td><input type="button" class="numbers" value="6"onclick="document.getElementById('result').value += '6'"></td>
+                    <td><input type="button" class="right" value="-"onclick="document.getElementById('result').value += '-'"></td>
                 </tr>
                 <tr>
-                    <td class="numbers">1</td>
-                    <td class="numbers">2</td>
-                    <td class="numbers">3</td>
-                    <td class="right">+</td>
+                    <td><input type="button" class="numbers" value="1" onclick="document.getElementById('result').value += '1'"></td>
+                    <td><input type="button" class="numbers" value="2" onclick="document.getElementById('result').value += '2'"></td>
+                    <td><input type="button" class="numbers" value="3" onclick="document.getElementById('result').value += '3'"></td>
+                    <td><input type="button" class="right" value="+" onclick="document.getElementById('result').value += '+'"></td>
                 </tr>
                 <tr>
-                    <td class="numbers" colspan="2">0</td>
-                    <td class="numbers">.</td>
-                    <td class="right">=</td>
+                    <td colspan="2"><input type="button" class="numbers" value="0" style="width: 100%;" onclick="document.getElementById('result').value += '0'"></td>
+                    <td><input type="button" class="numbers" value="-" onclick="document.getElementById('result').value += '-'"></td>
+                    <td><input type="button" class="right" value="=" onclick="document.getElementById('result').value = eval(document.getElementById('result').value)"></td>
                 </tr>
             </table>
         </div>
